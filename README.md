@@ -19,6 +19,8 @@ To update, run the same command again.
 
 ## Showcase
 
+The font in the screenshots is [0xProto Nerd Font Mono](https://www.nerdfonts.com/font-downloads) (the Nerd Font version of [0xProto](https://github.com/0xType/0xProto)), at size 16.
+
 ### sm_dark_full
 
 ![sm_dark_full](images/sm_dark_full.png)
