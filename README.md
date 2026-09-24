@@ -17,6 +17,22 @@ curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.s
 Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix", "sm_light", "sm_amber" or "sm_ubuntu".
 To update, run the same command again.
 
+## Notepad++
+
+The `notepad++` folder has the same themes for Notepad++.
+
+1. Copy the files from `notepad++/themes` to `%APPDATA%\Notepad++\themes`.
+2. Restart Notepad++.
+3. Open **Settings → Style Configurator** and select the theme in **Select theme**.
+
+The optional script `notepad++/ui.py` gives Notepad++ a flat UI: small Fluent toolbar icons, flat tabs, no editor border and a frame on the current line. It also disables drag and drop of selected text. Close Notepad++ before you run it, because Notepad++ writes `config.xml` again when it closes:
+
+```powershell
+python notepad++/ui.py
+```
+
+To make the Notepad++ themes again after a change to a VS Code theme, run `python notepad++/convert.py`.
+
 ## Showcase
 
 The font in the screenshots is [0xProto Nerd Font Mono](https://www.nerdfonts.com/font-downloads) (the Nerd Font version of [0xProto](https://github.com/0xType/0xProto)), at size 16.
