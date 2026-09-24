@@ -4,7 +4,7 @@
 
 set -e
 
-VSIX_URL="https://github.com/milarditch/sm_themes/releases/download/latest/simple-themes.vsix"
+VSIX_URL="https://github.com/milarditch/sm_themes/releases/download/latest/sm-themes.vsix"
 EXT_DIR="$HOME/.vscode/extensions"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -16,9 +16,12 @@ fi
 
 # Remove copies from older versions of this script
 rm -rf "$EXT_DIR/milarditch.minimal-contrast" "$EXT_DIR/milarditch.vscode-theme-dark"
+if code --list-extensions | grep -qi '^milarditch\.simple-themes$'; then
+    code --uninstall-extension milarditch.simple-themes >/dev/null
+fi
 
 echo "Downloading sm_dark_full and sm_powershell..."
-curl -fsSL "$VSIX_URL" -o "$TMP/simple-themes.vsix"
-code --install-extension "$TMP/simple-themes.vsix" --force
+curl -fsSL "$VSIX_URL" -o "$TMP/sm-themes.vsix"
+code --install-extension "$TMP/sm-themes.vsix" --force
 
 echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"sm_dark_full\" or \"sm_powershell\"."

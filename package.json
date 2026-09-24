@@ -1,6 +1,6 @@
 {
-    "name": "simple-themes",
-    "displayName": "Simple Themes",
+    "name": "sm-themes",
+    "displayName": "sm_themes",
     "description": "Simple dark themes without visual clutter.",
     "version": "1.0.0",
     "publisher": "milarditch",

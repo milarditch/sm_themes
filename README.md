@@ -1,4 +1,4 @@
-# Simple Themes
+# sm_themes
 
 ## Install
 
