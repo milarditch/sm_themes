@@ -48,6 +48,11 @@
         "label": "sm_amber",
         "uiTheme": "vs-dark",
         "path": "./themes/sm_amber-color-theme.json"
+      },
+      {
+        "label": "sm_ubuntu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sm_ubuntu-color-theme.json"
       }
         ]
     }
