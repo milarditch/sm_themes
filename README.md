@@ -14,7 +14,7 @@ macOS or Linux:
 curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.sh | sh
 ```
 
-Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white" or "sm_matrix".
+Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix" or "sm_light".
 To update, run the same command again.
 
 ## Showcase
@@ -34,6 +34,10 @@ To update, run the same command again.
 ### sm_matrix
 
 ![sm_matrix](images/sm_matrix.png)
+
+### sm_light
+
+![sm_light](images/sm_light.png)
 
 ## Recommended settings
 
