@@ -33,6 +33,11 @@
                 "label": "sm_dark_black_white",
                 "uiTheme": "vs-dark",
                 "path": "./themes/sm_dark_black_white-color-theme.json"
+            },
+      {
+                "label": "sm_matrix",
+                "uiTheme": "vs-dark",
+                "path": "./themes/sm_matrix-color-theme.json"
             }
         ]
     }
