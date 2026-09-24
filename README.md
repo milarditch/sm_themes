@@ -17,7 +17,15 @@ curl -fsSL https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/i
 Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full" or "sm_powershell".
 To update, run the same command again.
 
-<!-- Add a screenshot: ![Simple Themes](images/screenshot.png) -->
+## Showcase
+
+### sm_dark_full
+
+![sm_dark_full](images/sm_dark_full.png)
+
+### sm_powershell
+
+![sm_powershell](images/sm_powershell.png)
 
 ## Colors
 
