@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installs the sm_dark_full and sm_powershell themes for VS Code.
+# Installs the sm_dark_full, sm_powershell and sm_dark_black_white themes for VS Code.
 # Usage: curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.sh | sh
 
 set -e
@@ -13,8 +13,8 @@ if ! command -v code >/dev/null 2>&1; then
     exit 1
 fi
 
-echo "Downloading sm_dark_full and sm_powershell..."
+echo "Downloading sm_dark_full, sm_powershell and sm_dark_black_white..."
 curl -fsSL "$VSIX_URL" -o "$TMP/sm-themes.vsix"
 code --install-extension "$TMP/sm-themes.vsix" --force
 
-echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"sm_dark_full\" or \"sm_powershell\"."
+echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"sm_dark_full\", \"sm_powershell\" or \"sm_dark_black_white\"."
