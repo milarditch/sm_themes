@@ -2,3 +2,5 @@
 .git/**
 .gitignore
 .vscode/**
+install.ps1
+install.sh
