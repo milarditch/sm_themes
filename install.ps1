@@ -4,28 +4,28 @@
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 
-$repoZip = 'https://github.com/milarditch/vscode-theme-dark/archive/refs/heads/main.zip'
+$vsixUrl = 'https://github.com/milarditch/vscode-theme-dark/releases/download/latest/simple-themes.vsix'
 $extDir  = Join-Path $env:USERPROFILE '.vscode\extensions'
-$target  = Join-Path $extDir 'milarditch.vscode-theme-dark'
-$tmp     = Join-Path ([IO.Path]::GetTempPath()) ('vscode-theme-dark-' + [guid]::NewGuid())
+$vsix    = Join-Path ([IO.Path]::GetTempPath()) 'simple-themes.vsix'
 
-New-Item -ItemType Directory -Force $tmp | Out-Null
-New-Item -ItemType Directory -Force $extDir | Out-Null
+if (-not (Get-Command code -ErrorAction SilentlyContinue)) {
+    throw 'The "code" command was not found. Install VS Code and add it to PATH.'
+}
+
+# Remove copies from older versions of this script
+foreach ($old in 'milarditch.minimal-contrast', 'milarditch.vscode-theme-dark') {
+    $path = Join-Path $extDir $old
+    if (Test-Path $path) { Remove-Item -Recurse -Force $path }
+}
 
 try {
     Write-Host 'Downloading sm_dark_full and sm_powershell...'
-    $zip = Join-Path $tmp 'theme.zip'
-    Invoke-WebRequest -Uri $repoZip -OutFile $zip -UseBasicParsing
-    Expand-Archive -Path $zip -DestinationPath $tmp -Force
+    Invoke-WebRequest -Uri $vsixUrl -OutFile $vsix -UseBasicParsing
+    code --install-extension $vsix --force
+    if ($LASTEXITCODE -ne 0) { throw 'The installation failed.' }
 
-    foreach ($old in @($target, (Join-Path $extDir 'milarditch.minimal-contrast'))) {
-        if (Test-Path $old) { Remove-Item -Recurse -Force $old }
-    }
-    Move-Item (Join-Path $tmp 'vscode-theme-dark-main') $target
-
-    Write-Host "Installed to $target"
     Write-Host 'Restart VS Code, press Ctrl+K Ctrl+T and select "sm_dark_full" or "sm_powershell".'
 }
 finally {
-    Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue
+    Remove-Item -Force $vsix -ErrorAction SilentlyContinue
 }

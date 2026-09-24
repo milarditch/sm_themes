@@ -4,19 +4,21 @@
 
 set -e
 
-REPO_TAR="https://github.com/milarditch/vscode-theme-dark/archive/refs/heads/main.tar.gz"
+VSIX_URL="https://github.com/milarditch/vscode-theme-dark/releases/download/latest/simple-themes.vsix"
 EXT_DIR="$HOME/.vscode/extensions"
-TARGET="$EXT_DIR/milarditch.vscode-theme-dark"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
-mkdir -p "$EXT_DIR"
+if ! command -v code >/dev/null 2>&1; then
+    echo 'The "code" command was not found. Install VS Code and add it to PATH.' >&2
+    exit 1
+fi
+
+# Remove copies from older versions of this script
+rm -rf "$EXT_DIR/milarditch.minimal-contrast" "$EXT_DIR/milarditch.vscode-theme-dark"
 
 echo "Downloading sm_dark_full and sm_powershell..."
-curl -fsSL "$REPO_TAR" | tar -xz -C "$TMP"
+curl -fsSL "$VSIX_URL" -o "$TMP/simple-themes.vsix"
+code --install-extension "$TMP/simple-themes.vsix" --force
 
-rm -rf "$TARGET" "$EXT_DIR/milarditch.minimal-contrast"
-mv "$TMP/vscode-theme-dark-main" "$TARGET"
-
-echo "Installed to $TARGET"
 echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"sm_dark_full\" or \"sm_powershell\"."
