@@ -14,7 +14,7 @@ macOS or Linux:
 curl -fsSL https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/install.sh | sh
 ```
 
-Restart VS Code, press `Ctrl+K Ctrl+T` and select "Minimal Contrast".
+Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full" or "sm_powershell".
 To update, run the same command again.
 
 <!-- Add a screenshot: ![Minimal Contrast](images/screenshot.png) -->

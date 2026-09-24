@@ -19,4 +19,4 @@ rm -rf "$TARGET"
 mv "$TMP/vscode-theme-dark-main" "$TARGET"
 
 echo "Installed to $TARGET"
-echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"Minimal Contrast\"."
+echo "Restart VS Code, press Ctrl+K Ctrl+T and select \"sm_dark_full\" or \"sm_powershell\"."

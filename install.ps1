@@ -22,7 +22,7 @@ try {
     Move-Item (Join-Path $tmp 'vscode-theme-dark-main') $target
 
     Write-Host "Installed to $target"
-    Write-Host 'Restart VS Code, press Ctrl+K Ctrl+T and select "Minimal Contrast".'
+    Write-Host 'Restart VS Code, press Ctrl+K Ctrl+T and select "sm_dark_full" or "sm_powershell".'
 }
 finally {
     Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue

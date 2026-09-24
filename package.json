@@ -20,9 +20,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "Minimal Contrast",
+                "label": "sm_dark_full",
                 "uiTheme": "vs-dark",
-                "path": "./themes/minimal-contrast-color-theme.json"
+                "path": "./themes/sm_dark_full-color-theme.json"
+            },
+            {
+                "label": "sm_powershell",
+                "uiTheme": "vs-dark",
+                "path": "./themes/sm_powershell-color-theme.json"
             }
         ]
     }
