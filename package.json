@@ -1,7 +1,7 @@
 {
     "name": "simple-themes",
     "displayName": "Simple Themes",
-    "description": "A simple black theme without visual clutter, with Visual Assist code colors for C and C++.",
+    "description": "Simple dark themes without visual clutter.",
     "version": "1.0.0",
     "publisher": "milarditch",
     "license": "MIT",
@@ -15,7 +15,7 @@
     "homepage": "https://github.com/milarditch/vscode-theme-dark#readme",
     "engines": { "vscode": "^1.80.0" },
     "categories": ["Themes"],
-    "keywords": ["theme", "dark", "black", "minimal", "visual assist", "c", "cpp"],
+    "keywords": ["theme", "dark", "black", "minimal", "c", "cpp"],
     "galleryBanner": { "color": "#000000", "theme": "dark" },
     "contributes": {
         "themes": [
