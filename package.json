@@ -1,6 +1,6 @@
 {
-    "name": "minimal-contrast",
-    "displayName": "Minimal Contrast",
+    "name": "simple-themes",
+    "displayName": "Simple Themes",
     "description": "A simple black theme without visual clutter, with Visual Assist code colors for C and C++.",
     "version": "1.0.0",
     "publisher": "milarditch",

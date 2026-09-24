@@ -1,4 +1,4 @@
-# Minimal Contrast
+# Simple Themes
 
 ## Install
 
@@ -17,7 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/i
 Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full" or "sm_powershell".
 To update, run the same command again.
 
-<!-- Add a screenshot: ![Minimal Contrast](images/screenshot.png) -->
+<!-- Add a screenshot: ![Simple Themes](images/screenshot.png) -->
 
 ## Colors
 
