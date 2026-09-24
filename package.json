@@ -1,7 +1,7 @@
 {
     "name": "sm-themes",
     "displayName": "sm_themes",
-    "description": "Simple dark themes without visual clutter.",
+    "description": "Custom theme collection",
     "version": "1.0.0",
     "publisher": "milarditch",
     "license": "MIT",
@@ -15,7 +15,7 @@
     "homepage": "https://github.com/milarditch/sm_themes#readme",
     "engines": { "vscode": "^1.80.0" },
     "categories": ["Themes"],
-    "keywords": ["theme", "dark", "black", "minimal", "c", "cpp"],
+    "keywords": ["theme", "dark", "black", "c", "cpp"],
     "galleryBanner": { "color": "#000000", "theme": "dark" },
     "contributes": {
         "themes": [

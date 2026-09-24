@@ -5,20 +5,10 @@ $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 
 $vsixUrl = 'https://github.com/milarditch/sm_themes/releases/download/latest/sm-themes.vsix'
-$extDir  = Join-Path $env:USERPROFILE '.vscode\extensions'
 $vsix    = Join-Path ([IO.Path]::GetTempPath()) 'sm-themes.vsix'
 
 if (-not (Get-Command code -ErrorAction SilentlyContinue)) {
     throw 'The "code" command was not found. Install VS Code and add it to PATH.'
-}
-
-# Remove copies from older versions of this script
-foreach ($old in 'milarditch.minimal-contrast', 'milarditch.vscode-theme-dark') {
-    $path = Join-Path $extDir $old
-    if (Test-Path $path) { Remove-Item -Recurse -Force $path }
-}
-if (code --list-extensions | Select-String -SimpleMatch 'milarditch.simple-themes') {
-    code --uninstall-extension milarditch.simple-themes | Out-Null
 }
 
 try {
