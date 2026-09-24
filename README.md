@@ -1,6 +1,6 @@
 # sm_themes
 
-## Install
+## VS Code Install
 
 Windows (PowerShell):
 
@@ -17,7 +17,7 @@ curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.s
 Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix", "sm_light", "sm_amber" or "sm_ubuntu".
 To update, run the same command again.
 
-## Notepad++
+## Notepad++ Install
 
 The `notepad++` folder has the same themes for Notepad++.
 
