@@ -1,0 +1,29 @@
+{
+    "name": "minimal-contrast",
+    "displayName": "Minimal Contrast",
+    "description": "A simple black theme without visual clutter, with Visual Assist code colors for C and C++.",
+    "version": "1.0.0",
+    "publisher": "milarditch",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/milarditch/vscode-theme-dark.git"
+    },
+    "bugs": {
+        "url": "https://github.com/milarditch/vscode-theme-dark/issues"
+    },
+    "homepage": "https://github.com/milarditch/vscode-theme-dark#readme",
+    "engines": { "vscode": "^1.80.0" },
+    "categories": ["Themes"],
+    "keywords": ["theme", "dark", "black", "minimal", "visual assist", "c", "cpp"],
+    "galleryBanner": { "color": "#000000", "theme": "dark" },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Minimal Contrast",
+                "uiTheme": "vs-dark",
+                "path": "./themes/minimal-contrast-color-theme.json"
+            }
+        ]
+    }
+}
