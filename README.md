@@ -5,13 +5,13 @@
 Windows (PowerShell):
 
 ```powershell
-irm https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/milarditch/sm_themes/main/install.ps1 | iex
 ```
 
 macOS or Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.sh | sh
 ```
 
 Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full" or "sm_powershell".

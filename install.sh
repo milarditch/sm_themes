@@ -1,10 +1,10 @@
 #!/bin/sh
 # Installs the sm_dark_full and sm_powershell themes for VS Code.
-# Usage: curl -fsSL https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/install.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.sh | sh
 
 set -e
 
-VSIX_URL="https://github.com/milarditch/vscode-theme-dark/releases/download/latest/simple-themes.vsix"
+VSIX_URL="https://github.com/milarditch/sm_themes/releases/download/latest/simple-themes.vsix"
 EXT_DIR="$HOME/.vscode/extensions"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT

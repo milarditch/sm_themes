@@ -7,12 +7,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/milarditch/vscode-theme-dark.git"
+        "url": "https://github.com/milarditch/sm_themes.git"
     },
     "bugs": {
-        "url": "https://github.com/milarditch/vscode-theme-dark/issues"
+        "url": "https://github.com/milarditch/sm_themes/issues"
     },
-    "homepage": "https://github.com/milarditch/vscode-theme-dark#readme",
+    "homepage": "https://github.com/milarditch/sm_themes#readme",
     "engines": { "vscode": "^1.80.0" },
     "categories": ["Themes"],
     "keywords": ["theme", "dark", "black", "minimal", "c", "cpp"],

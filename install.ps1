@@ -1,10 +1,10 @@
 # Installs the sm_dark_full and sm_powershell themes for VS Code.
-# Usage: irm https://raw.githubusercontent.com/milarditch/vscode-theme-dark/main/install.ps1 | iex
+# Usage: irm https://raw.githubusercontent.com/milarditch/sm_themes/main/install.ps1 | iex
 
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 
-$vsixUrl = 'https://github.com/milarditch/vscode-theme-dark/releases/download/latest/simple-themes.vsix'
+$vsixUrl = 'https://github.com/milarditch/sm_themes/releases/download/latest/simple-themes.vsix'
 $extDir  = Join-Path $env:USERPROFILE '.vscode\extensions'
 $vsix    = Join-Path ([IO.Path]::GetTempPath()) 'simple-themes.vsix'
 
