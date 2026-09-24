@@ -1,4 +1,4 @@
-# Installs the sm_dark_full, sm_powershell, sm_dark_black_white, sm_matrix and sm_light themes for VS Code.
+# Installs the sm_dark_full, sm_powershell, sm_dark_black_white, sm_matrix, sm_light and sm_amber themes for VS Code.
 # Usage: irm https://raw.githubusercontent.com/milarditch/sm_themes/main/install.ps1 | iex
 
 $ErrorActionPreference = 'Stop'
@@ -12,12 +12,12 @@ if (-not (Get-Command code -ErrorAction SilentlyContinue)) {
 }
 
 try {
-    Write-Host 'Downloading sm_dark_full, sm_powershell, sm_dark_black_white, sm_matrix and sm_light...'
+    Write-Host 'Downloading sm_dark_full, sm_powershell, sm_dark_black_white, sm_matrix, sm_light and sm_amber...'
     Invoke-WebRequest -Uri $vsixUrl -OutFile $vsix -UseBasicParsing
     code --install-extension $vsix --force
     if ($LASTEXITCODE -ne 0) { throw 'The installation failed.' }
 
-    Write-Host 'Restart VS Code, press Ctrl+K Ctrl+T and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix" or "sm_light".'
+    Write-Host 'Restart VS Code, press Ctrl+K Ctrl+T and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix", "sm_light" or "sm_amber".'
 }
 finally {
     Remove-Item -Force $vsix -ErrorAction SilentlyContinue

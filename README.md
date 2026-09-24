@@ -14,7 +14,7 @@ macOS or Linux:
 curl -fsSL https://raw.githubusercontent.com/milarditch/sm_themes/main/install.sh | sh
 ```
 
-Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix" or "sm_light".
+Restart VS Code, press `Ctrl+K Ctrl+T` and select "sm_dark_full", "sm_powershell", "sm_dark_black_white", "sm_matrix", "sm_light" or "sm_amber".
 To update, run the same command again.
 
 ## Showcase
@@ -40,6 +40,10 @@ The font in the screenshots is [0xProto Nerd Font Mono](https://www.nerdfonts.co
 ### sm_light
 
 ![sm_light](images/sm_light.png)
+
+### sm_amber
+
+![sm_amber](images/sm_amber.png)
 
 ## Recommended settings
 
